@@ -49,9 +49,9 @@ func PyThreadState_Swap(tstate *PyThreadState) *PyThreadState {
 }
 
 //PyEval_ReInitThreads : https://docs.python.org/3/c-api/init.html#c.PyEval_ReInitThreads
-func PyEval_ReInitThreads() {
-	C.PyEval_ReInitThreads()
-}
+//func PyEval_ReInitThreads() {
+//	C.PyEval_ReInitThreads()
+//}
 
 //PyGILState_Ensure : https://docs.python.org/3/c-api/init.html#c.PyGILState_Ensure
 func PyGILState_Ensure() PyGILState {
